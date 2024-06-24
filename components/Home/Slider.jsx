@@ -15,7 +15,7 @@ useEffect(()=>{
         const querySnapshort =await getDocs(q);
 
         querySnapshort.forEach(doc => {
-            console.log(doc.data())
+            // console.log(doc.data())
             setSliderList(prev=>[...prev,doc.data()])
         } )
             
@@ -25,16 +25,23 @@ useEffect(()=>{
       <Text style={{
         fontFamily:'outfit-bold',
         fontSize:20,
-        padding:20
+        paddingLeft:20,
+        paddingTop:20,
+        marginBottom:5
       }}>
         #Special for you
       </Text>
       <FlatList 
       data={sliderList}
+      horizontal={true}
+      showsHorizontalScrollIndicator={false}
+      style={{paddingLeft:20}}
       renderItem={({item,index})=>(
         <Image source={{uri:item.imageUrl}} style={{
             width:300,
-            height:160
+            height:150,
+            borderRadius:15,
+            marginRight:15
         }}/>
       )}
       />
