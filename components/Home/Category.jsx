@@ -31,7 +31,7 @@ const Category = () => {
         flexDirection:'row',
             justifyContent:'space-between',marginTop:10
         }}>
-      <Text style={{paddingLeft:20,
+      <Text style={{paddingLeft:10,
         fontSize:20,
         fontFamily:'outfit-bold'
       }}>Category</Text>

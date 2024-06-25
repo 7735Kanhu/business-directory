@@ -26,7 +26,7 @@ const PopularBusiness = () => {
         flexDirection:'row',
             justifyContent:'space-between',marginTop:20
         }}>
-      <Text style={{paddingLeft:20,
+      <Text style={{paddingLeft:10,
         fontSize:20,
         fontFamily:'outfit-bold'
       }}>Popular Business</Text>

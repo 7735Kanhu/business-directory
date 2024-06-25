@@ -28,6 +28,11 @@ export default function Intro({business}) {
         height:340
       }}
       />
+      <View style={{padding:20,marginTop:-20,backgroundColor:'#fff',borderTopLeftRadius:25,borderTopRightRadius:25}}>
+        <Text
+        style={{fontSize:26,fontFamily:'outfit-bold'}}>{business.name}</Text>
+        <Text style={{fontFamily:'outfit',fontSize:18}}>{business.address}</Text>
+      </View>
     </View>
   )
 }
